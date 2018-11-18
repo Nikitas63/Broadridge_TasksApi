@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TasksApi</name>
+    </assembly>
+    <members>
+        <member name="T:TasksApi.AssemblyMarker">
+            <summary>
+            Assembly marker type (used only to explicitly reference assembly via this marker type)
+            </summary>
+        </member>
+        <member name="P:TasksApi.Controllers.List.Query.Page">
+            <summary>
+            Page number (for paginated response)
+            </summary>
+        </member>
+        <member name="P:TasksApi.Controllers.List.Query.Size">
+            <summary>
+            Page size (for paginated response)
+            </summary>
+        </member>
+        <member name="P:TasksApi.Controllers.List.Query.OrderAsc">
+            <summary>
+            Available columns: "name,priority,date"
+            </summary>
+        </member>
+        <member name="P:TasksApi.Controllers.List.Query.OrderDesc">
+            <summary>
+            Available columns: "name,priority,date"
+            </summary>
+        </member>
+        <member name="M:TasksApi.Controllers.List.Handler.BuildSortedQuery(TasksApi.Controllers.List.Query,System.Linq.IQueryable{Tasks.DataLayer.Models.TaskModel})">
+            <summary>
+            Build sorted query by request.
+            </summary>
+            <param name="request">Request</param>
+            <param name="query">Existing query</param>
+            <returns>Sorted query</returns>
+        </member>
+        <member name="M:TasksApi.Controllers.List.Handler.GetOrderExpressions(TasksApi.Controllers.List.Query,System.Boolean)">
+            <summary>
+            Gets expression for ordering.
+            </summary>
+            <param name="request">Request.</param>
+            <param name="asc">Value determines whether ordering is ascending (or descending)</param>
+            <returns>Expression for ordering</returns>
+        </member>
+        <member name="M:TasksApi.Controllers.List.Handler.GetOrderByExpression(TasksApi.Controllers.SortingFields)">
+            <summary>
+            Gets expression for ordering.
+            </summary>
+            <param name="field">Field</param>
+            <returns>Expression.</returns>
+        </member>
+        <member name="P:TasksApi.Controllers.Put.Command.Status">
+            <summary>
+            Task status: 1 - Active, 2 - Completed
+            </summary>
+        </member>
+        <member name="M:TasksApi.Controllers.TasksController.GetTasks(TasksApi.Controllers.List.Query)">
+            <summary>
+            Gets the available tasks list.
+            </summary>
+            <param name="query">Query.</param>
+            <returns>Available tasks list.</returns>
+        </member>
+        <member name="M:TasksApi.Controllers.TasksController.CreateTask(TasksApi.Controllers.Post.Command)">
+            <summary>
+            Creates new task.
+            </summary>
+            <param name="query">Query.</param>
+            <returns>Created task.</returns>
+        </member>
+        <member name="M:TasksApi.Controllers.TasksController.UpdateTask(TasksApi.Controllers.Put.Command)">
+            <summary>
+            Updates existing task.
+            </summary>
+            <param name="query">Query.</param>
+            <returns>Created task.</returns>
+        </member>
+        <member name="M:TasksApi.Controllers.TasksController.DeleteTask(TasksApi.Controllers.Delete.Command)">
+            <summary>
+            Deletes existing task.
+            </summary>
+            <param name="query">Query.</param>
+            <returns>Created task.</returns>
+        </member>
+        <member name="T:TasksApi.Errors.ErrorDetail">
+            <summary>
+            Represents an error detail
+            </summary>
+        </member>
+        <member name="P:TasksApi.Errors.ErrorDetail.Source">
+            <summary>
+            The error’s source
+            </summary>
+        </member>
+        <member name="P:TasksApi.Errors.ErrorDetail.Message">
+            <summary>
+            Description of the error
+            </summary>
+        </member>
+        <member name="T:TasksApi.Errors.ErrorResponse">
+            <summary>
+            Represents an error response
+            </summary>
+        </member>
+        <member name="P:TasksApi.Errors.ErrorResponse.Code">
+            <summary>
+            An HTTP status code value, without the textual description.
+            Example values include: 400 (Bad Request), 401 (Unauthorized), 404 (Not Found), etc…
+            </summary>
+        </member>
+        <member name="P:TasksApi.Errors.ErrorResponse.Message">
+            <summary>
+            Description of the error
+            </summary>
+        </member>
+        <member name="P:TasksApi.Filters.Models.ValidationCustomErrorAsMessage.Version">
+            <summary>
+            Format version (default value is the most recent)
+            </summary>
+        </member>
+    </members>
+</doc>

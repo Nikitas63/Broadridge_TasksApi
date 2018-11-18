@@ -1,0 +1,1031 @@
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10401]
+      An 'IServiceProvider' was created for internal use by Entity Framework.
+dbug: Microsoft.EntityFrameworkCore.Model[10600]
+      The property 'IsDeleted' on entity type 'TaskModel' was created in shadow state because there are no eligible CLR members with a matching name.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[20601]
+      The 'bool' property 'IsDeleted' on entity type 'TaskModel' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used for inserts when the property value is 'null'.
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.1-rtm-30846 initialized 'TasksDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+dbug: Microsoft.EntityFrameworkCore.Migrations[20400]
+      Migrating using database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader was disposed.
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+dbug: Microsoft.AspNetCore.Hosting.Internal.WebHost[3]
+      Hosting starting
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile is available. Using 'C:\Windows\system32\config\systemprofile\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+dbug: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[37]
+      Reading data from file 'C:\Windows\system32\config\systemprofile\AppData\Local\ASP.NET\DataProtection-Keys\key-57e0b406-5e7f-40e0-b97f-5377c447a35b.xml'.
+dbug: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[37]
+      Reading data from file 'C:\Windows\system32\config\systemprofile\AppData\Local\ASP.NET\DataProtection-Keys\key-839bd889-bb6a-41af-9e54-5ff4f4f49559.xml'.
+dbug: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[18]
+      Found key {57e0b406-5e7f-40e0-b97f-5377c447a35b}.
+dbug: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[18]
+      Found key {839bd889-bb6a-41af-9e54-5ff4f4f49559}.
+dbug: Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver[13]
+      Considering key {839bd889-bb6a-41af-9e54-5ff4f4f49559} with expiration date 2019-01-27 13:18:54Z as default key.
+dbug: Microsoft.AspNetCore.DataProtection.TypeForwardingActivator[0]
+      Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+dbug: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor[51]
+      Decrypting secret element using Windows DPAPI.
+dbug: Microsoft.AspNetCore.DataProtection.TypeForwardingActivator[0]
+      Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+dbug: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory[4]
+      Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+dbug: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory[3]
+      Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+dbug: Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider[2]
+      Using key {839bd889-bb6a-41af-9e54-5ff4f4f49559} as the default key.
+dbug: Microsoft.AspNetCore.DataProtection.Internal.DataProtectionStartupFilter[0]
+      Key ring with default key {839bd889-bb6a-41af-9e54-5ff4f4f49559} was loaded during application startup.
+dbug: Microsoft.AspNetCore.Mvc.MvcJsonOptions[0]
+      Compatibility switch AllowInputFormatterExceptionMessages in type MvcJsonOptions is using compatibility value True for version Version_2_1
+dbug: Microsoft.AspNetCore.Mvc.MvcOptions[0]
+      Compatibility switch AllowCombiningAuthorizeFilters in type MvcOptions is using compatibility value True for version Version_2_1
+dbug: Microsoft.AspNetCore.Mvc.MvcOptions[0]
+      Compatibility switch AllowBindingHeaderValuesToNonStringModelTypes in type MvcOptions is using compatibility value True for version Version_2_1
+dbug: Microsoft.AspNetCore.Mvc.MvcOptions[0]
+      Compatibility switch AllowValidatingTopLevelNodes in type MvcOptions is using compatibility value True for version Version_2_1
+dbug: Microsoft.AspNetCore.Mvc.MvcOptions[0]
+      Compatibility switch InputFormatterExceptionPolicy in type MvcOptions is using compatibility value MalformedInputExceptions for version Version_2_1
+dbug: Microsoft.AspNetCore.Mvc.MvcOptions[0]
+      Compatibility switch SuppressBindingUndefinedValueToEnumType in type MvcOptions is using compatibility value True for version Version_2_1
+dbug: Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions[0]
+      Compatibility switch AllowAreas in type RazorPagesOptions is using compatibility value True for version Version_2_1
+dbug: Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions[0]
+      Compatibility switch AllowMappingHeadRequestsToGetHandler in type RazorPagesOptions is using compatibility value True for version Version_2_1
+dbug: Microsoft.AspNetCore.Mvc.MvcViewOptions[0]
+      Compatibility switch SuppressTempDataAttributePrefix in type MvcViewOptions is using compatibility value True for version Version_2_1
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory[12]
+      Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+dbug: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer[2]
+      Failed to locate the development https certificate at '(null)'.
+dbugHosting environment: Production
+: Microsoft.AspNetCore.Hosting.Internal.WebHost[4]
+      Hosting started
+Content root path: C:\Users\skvortsov\Documents\TestPublish
+dbug: Microsoft.AspNetCore.Hosting.Internal.WebHost[0]
+      Loaded hosting startup assembly TasksApi
+dbug: Microsoft.AspNetCore.Hosting.Internal.WebHost[0]
+      Loaded hosting startup assembly Microsoft.AspNetCore.Server.IISIntegration
+Now listening on: http://127.0.0.1:22252
+Application started. Press Ctrl+C to shut down.
+dbug: Microsoft.AspNetCore.Server.Kestrel[1]
+      Connection id "0HLIDEFD3D5AK" started.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:12345/swagger/index.html  
+dbug: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware[0]
+      Wildcard detected, all requests with hosts will be allowed.
+trce: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware[0]
+      All hosts are allowed.
+dbug: Microsoft.AspNetCore.Server.Kestrel[9]
+      Connection id "0HLIDEFD3D5AK" completed keep alive response.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 71.215ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:12345/swagger/v1/swagger.json  
+trce: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware[0]
+      All hosts are allowed.
+dbug: Microsoft.AspNetCore.Server.Kestrel[1]
+      Connection id "0HLIDEFD3D5AL" started.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:12345/swagger/favicon-32x32.png  
+trce: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware[0]
+      All hosts are allowed.
+trce: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[0]
+      Range header's value is empty.
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+dbug: Microsoft.AspNetCore.Server.Kestrel[9]
+      Connection id "0HLIDEFD3D5AL" completed keep alive response.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 13.8388ms 200 image/png
+dbug: Microsoft.AspNetCore.Server.Kestrel[9]
+      Connection id "0HLIDEFD3D5AK" completed keep alive response.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 154.2761ms 200 application/json;charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:12345/api/tasks  
+trce: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware[0]
+      All hosts are allowed.
+dbug: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[3]
+      The request path  does not match the path filter
+dbug: Microsoft.AspNetCore.Routing.Tree.TreeRouter[1]
+      Request successfully matched the route with name '(null)' and template 'api/tasks'.
+dbug: Microsoft.AspNetCore.Mvc.Internal.ActionSelector[2]
+      Action 'TasksApi.Controllers.TasksController.CreateTask (TasksApi)' with id '73d36151-fc33-4e33-83f6-7ed9340c17b8' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "GetTasks", controller = "Tasks"}. Executing action TasksApi.Controllers.TasksController.GetTasks (TasksApi)
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of authorization filters (in the following order): None
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter, TasksApi.Filters.ValidateModelFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of exception filters (in the following order): TasksApi.Filters.HttpGlobalExceptionFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[22]
+      Attempting to bind parameter 'query' of type 'TasksApi.Controllers.List+Query' ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder[44]
+      Attempting to bind parameter 'query' of type 'TasksApi.Controllers.List+Query' using the name '' in request data ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[15]
+      Could not find a value in the request with name 'Page' for binding property 'TasksApi.Controllers.List+Query.Page' of type 'System.Nullable`1[System.Int32]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[14]
+      Done attempting to bind property 'TasksApi.Controllers.List+Query.Page' of type 'System.Nullable`1[System.Int32]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[15]
+      Could not find a value in the request with name 'Size' for binding property 'TasksApi.Controllers.List+Query.Size' of type 'System.Nullable`1[System.Int32]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[14]
+      Done attempting to bind property 'TasksApi.Controllers.List+Query.Size' of type 'System.Nullable`1[System.Int32]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[13]
+      Attempting to bind property 'TasksApi.Controllers.List+Query.OrderAsc' of type 'System.String[]' using the name 'OrderAsc' in request data ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[15]
+      Could not find a value in the request with name 'OrderAsc' for binding property 'TasksApi.Controllers.List+Query.OrderAsc' of type 'System.String[]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[14]
+      Done attempting to bind property 'TasksApi.Controllers.List+Query.OrderAsc' of type 'System.String[]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[13]
+      Attempting to bind property 'TasksApi.Controllers.List+Query.OrderDesc' of type 'System.String[]' using the name 'OrderDesc' in request data ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[15]
+      Could not find a value in the request with name 'OrderDesc' for binding property 'TasksApi.Controllers.List+Query.OrderDesc' of type 'System.String[]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[14]
+      Done attempting to bind property 'TasksApi.Controllers.List+Query.OrderDesc' of type 'System.String[]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder[45]
+      Done attempting to bind parameter 'query' of type 'TasksApi.Controllers.List+Query'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[23]
+      Done attempting to bind parameter 'query' of type 'TasksApi.Controllers.List+Query'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[26]
+      Attempting to validate the bound parameter 'query' of type 'TasksApi.Controllers.List+Query' ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[27]
+      Done attempting to validate the bound parameter 'query' of type 'TasksApi.Controllers.List+Query'.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuting on filter TasksApi.Filters.ValidateModelFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuting on filter TasksApi.Filters.ValidateModelFilter.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method TasksApi.Controllers.TasksController.GetTasks (TasksApi) with arguments (TasksApi.Controllers.List+Query) - Validation state: Valid
+info: TasksApi.Controllers.TasksController[0]
+      Start GetTasks query
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10401]
+      An 'IServiceProvider' was created for internal use by Entity Framework.
+dbug: Microsoft.EntityFrameworkCore.Model[10600]
+      The property 'IsDeleted' on entity type 'TaskModel' was created in shadow state because there are no eligible CLR members with a matching name.
+warn: Microsoft.EntityFrameworkCore.Model.Validation[20601]
+      The 'bool' property 'IsDeleted' on entity type 'TaskModel' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead so that the default will only be used for inserts when the property value is 'null'.
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.1-rtm-30846 initialized 'TasksDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+dbug: Microsoft.EntityFrameworkCore.Query[10101]
+      Compiling query model: 
+      '(from TaskModel dtoTaskModel in DbSet<TaskModel>
+      select new TaskDetails{ 
+          CreatedDate = [dtoTaskModel].CreatedDate, 
+          Description = [dtoTaskModel].Description, 
+          Id = [dtoTaskModel].Id, 
+          Name = [dtoTaskModel].Name, 
+          Priority = [dtoTaskModel].Priority, 
+          Status = [dtoTaskModel].Status, 
+          TimeToComplete = [dtoTaskModel].TimeToComplete, 
+          UpdatedDate = [dtoTaskModel].UpdatedDate 
+      }
+      ).Any()'
+dbug: Microsoft.EntityFrameworkCore.Query[10104]
+      Optimized query model: 
+      '(from TaskModel t in DbSet<TaskModel>
+      where !(Property([t], "IsDeleted"))
+      select new TaskDetails{ 
+          CreatedDate = [t].CreatedDate, 
+          Description = [t].Description, 
+          Id = [t].Id, 
+          Name = [t].Name, 
+          Priority = [t].Priority, 
+          Status = [t].Status, 
+          TimeToComplete = [t].TimeToComplete, 
+          UpdatedDate = [t].UpdatedDate 
+      }
+      ).Any()'
+dbug: Microsoft.EntityFrameworkCore.Query[10107]
+      (QueryContext queryContext) => IEnumerable<bool> _InterceptExceptions(
+          source: IEnumerable<bool> _ToSequence(() => bool GetResult(
+                  valueBuffers: IEnumerable<ValueBuffer> _Query(
+                      queryContext: queryContext, 
+                      shaperCommandContext: SelectExpression: 
+                          SELECT CASE
+                              WHEN EXISTS (
+                                  SELECT 1
+                                  FROM [dbo].[TaskModel] AS [t]
+                                  WHERE [t].[IsDeleted] = 0)
+                              THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                          END), 
+                  throwOnNullResult: False)), 
+          contextType: Tasks.DataLayer.EfClasses.TasksDbContext, 
+          logger: DiagnosticsLogger<Query>, 
+          queryContext: queryContext)
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [dbo].[TaskModel] AS [t]
+              WHERE [t].[IsDeleted] = 0)
+          THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [dbo].[TaskModel] AS [t]
+              WHERE [t].[IsDeleted] = 0)
+          THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+      END
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader was disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Query[10101]
+      Compiling query model: 
+      '(from TaskModel dtoTaskModel in DbSet<TaskModel>
+      select new TaskDetails{ 
+          CreatedDate = [dtoTaskModel].CreatedDate, 
+          Description = [dtoTaskModel].Description, 
+          Id = [dtoTaskModel].Id, 
+          Name = [dtoTaskModel].Name, 
+          Priority = [dtoTaskModel].Priority, 
+          Status = [dtoTaskModel].Status, 
+          TimeToComplete = [dtoTaskModel].TimeToComplete, 
+          UpdatedDate = [dtoTaskModel].UpdatedDate 
+      }
+      ).Count()'
+dbug: Microsoft.EntityFrameworkCore.Query[10104]
+      Optimized query model: 
+      '(from TaskModel t in DbSet<TaskModel>
+      where !(Property([t], "IsDeleted"))
+      select new TaskDetails{ 
+          CreatedDate = [t].CreatedDate, 
+          Description = [t].Description, 
+          Id = [t].Id, 
+          Name = [t].Name, 
+          Priority = [t].Priority, 
+          Status = [t].Status, 
+          TimeToComplete = [t].TimeToComplete, 
+          UpdatedDate = [t].UpdatedDate 
+      }
+      ).Count()'
+dbug: Microsoft.EntityFrameworkCore.Query[10107]
+      (QueryContext queryContext) => IEnumerable<int> _InterceptExceptions(
+          source: IEnumerable<int> _ToSequence(() => int GetResult(
+                  valueBuffers: IEnumerable<ValueBuffer> _Query(
+                      queryContext: queryContext, 
+                      shaperCommandContext: SelectExpression: 
+                          SELECT COUNT(*)
+                          FROM [dbo].[TaskModel] AS [t]
+                          WHERE [t].[IsDeleted] = 0), 
+                  throwOnNullResult: False)), 
+          contextType: Tasks.DataLayer.EfClasses.TasksDbContext, 
+          logger: DiagnosticsLogger<Query>, 
+          queryContext: queryContext)
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE [t].[IsDeleted] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE [t].[IsDeleted] = 0
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader was disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Query[10101]
+      Compiling query model: 
+      '(from TaskModel dtoTaskModel in DbSet<TaskModel>
+      select new TaskDetails{ 
+          CreatedDate = [dtoTaskModel].CreatedDate, 
+          Description = [dtoTaskModel].Description, 
+          Id = [dtoTaskModel].Id, 
+          Name = [dtoTaskModel].Name, 
+          Priority = [dtoTaskModel].Priority, 
+          Status = [dtoTaskModel].Status, 
+          TimeToComplete = [dtoTaskModel].TimeToComplete, 
+          UpdatedDate = [dtoTaskModel].UpdatedDate 
+      }
+      )
+      .Skip(__p_0)
+      .Take(__p_1)'
+warn: Microsoft.EntityFrameworkCore.Query[10102]
+      Query: '(from TaskModel dtoTaskModel in DbSet<TaskModel> select new TaskDetails{ { 
+          CreatedDate = [dtoT...' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+dbug: Microsoft.EntityFrameworkCore.Query[10104]
+      Optimized query model: 
+      '(from TaskModel t in DbSet<TaskModel>
+      where !(Property([t], "IsDeleted"))
+      select new TaskDetails{ 
+          CreatedDate = [t].CreatedDate, 
+          Description = [t].Description, 
+          Id = [t].Id, 
+          Name = [t].Name, 
+          Priority = [t].Priority, 
+          Status = [t].Status, 
+          TimeToComplete = [t].TimeToComplete, 
+          UpdatedDate = [t].UpdatedDate 
+      }
+      )
+      .Skip(__p_0)
+      .Take(__p_1)'
+dbug: Microsoft.EntityFrameworkCore.Query[10107]
+      (QueryContext queryContext) => IEnumerable<TaskDetails> _InterceptExceptions(
+          source: IEnumerable<TaskDetails> _ShapedQuery(
+              queryContext: queryContext, 
+              shaperCommandContext: SelectExpression: 
+                  SELECT [t].[CreatedDate], [t].[Description], [t].[Id], [t].[Name], [t].[Priority], [t].[Status], [t].[TimeToComplete], [t].[UpdatedDate]
+                  FROM [dbo].[TaskModel] AS [t]
+                  WHERE [t].[IsDeleted] = 0
+                  ORDER BY (SELECT 1)
+                  OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY, 
+              shaper: TypedProjectionShaper<ValueBufferShaper, ValueBuffer, TaskDetails>), 
+          contextType: Tasks.DataLayer.EfClasses.TasksDbContext, 
+          logger: DiagnosticsLogger<Query>, 
+          queryContext: queryContext)
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[CreatedDate], [t].[Description], [t].[Id], [t].[Name], [t].[Priority], [t].[Status], [t].[TimeToComplete], [t].[UpdatedDate]
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE [t].[IsDeleted] = 0
+      ORDER BY (SELECT 1)
+      OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[CreatedDate], [t].[Description], [t].[Id], [t].[Name], [t].[Priority], [t].[Status], [t].[TimeToComplete], [t].[UpdatedDate]
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE [t].[IsDeleted] = 0
+      ORDER BY (SELECT 1)
+      OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader was disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+info: TasksApi.Controllers.TasksController[0]
+      End GetTasks query
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method TasksApi.Controllers.TasksController.GetTasks (TasksApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 175.0954ms.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuted on filter TasksApi.Filters.ValidateModelFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuted on filter TasksApi.Filters.ValidateModelFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[4]
+      Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+dbug: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[11]
+      List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter
+dbug: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[7]
+      Attempting to select an output formatter based on Accept header 'application/json' and explicitly specified content types 'application/json'. The content types in the accept header must be a subset of the explicitly set content types.
+dbug: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[2]
+      Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter' and content type 'application/json' to write the response.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'TasksApi.Pagination.Page`1[[TasksApi.Dto.TaskDetails, TasksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[5]
+      After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action TasksApi.Controllers.TasksController.GetTasks (TasksApi) in 266.0769ms
+dbug: Microsoft.AspNetCore.Server.Kestrel[9]
+      Connection id "0HLIDEFD3D5AL" completed keep alive response.
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'TasksDbContext' disposed.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 328.6672ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 DELETE http://localhost:12345/api/tasks/e603afbf-8040-4c43-b49a-0000f821b4d3  
+trce: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware[0]
+      All hosts are allowed.
+dbug: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[1]
+      DELETE requests are not supported
+dbug: Microsoft.AspNetCore.Routing.Tree.TreeRouter[1]
+      Request successfully matched the route with name '(null)' and template 'api/tasks/{TaskId:guid}'.
+dbug: Microsoft.AspNetCore.Mvc.Internal.ActionSelector[2]
+      Action 'TasksApi.Controllers.TasksController.UpdateTask (TasksApi)' with id 'cdb016d2-290c-4965-86a7-9eb1b6b98d60' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "DeleteTask", controller = "Tasks"}. Executing action TasksApi.Controllers.TasksController.DeleteTask (TasksApi)
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of authorization filters (in the following order): None
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter, TasksApi.Filters.ValidateModelFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of exception filters (in the following order): TasksApi.Filters.HttpGlobalExceptionFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[22]
+      Attempting to bind parameter 'query' of type 'TasksApi.Controllers.Delete+Command' ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder[44]
+      Attempting to bind parameter 'query' of type 'TasksApi.Controllers.Delete+Command' using the name '' in request data ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[13]
+      Attempting to bind property 'TasksApi.Controllers.Delete+Command.TaskId' of type 'System.Guid' using the name 'TaskId' in request data ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[14]
+      Done attempting to bind property 'TasksApi.Controllers.Delete+Command.TaskId' of type 'System.Guid'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder[45]
+      Done attempting to bind parameter 'query' of type 'TasksApi.Controllers.Delete+Command'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[23]
+      Done attempting to bind parameter 'query' of type 'TasksApi.Controllers.Delete+Command'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[26]
+      Attempting to validate the bound parameter 'query' of type 'TasksApi.Controllers.Delete+Command' ...
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.1-rtm-30846 initialized 'TasksDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+dbug: Microsoft.EntityFrameworkCore.Query[10101]
+      Compiling query model: 
+      '(from TaskModel e in DbSet<TaskModel>
+      where Property([e], "Id") == __get_Item_0
+      select [e]).FirstOrDefault()'
+dbug: Microsoft.EntityFrameworkCore.Query[10104]
+      Optimized query model: 
+      '(from TaskModel t in DbSet<TaskModel>
+      where !(Property([t], "IsDeleted"))
+      where Property([t], "Id") == __get_Item_0
+      select [t]).FirstOrDefault()'
+dbug: Microsoft.EntityFrameworkCore.Query[10107]
+      (QueryContext queryContext) => IEnumerable<TaskModel> _InterceptExceptions(
+          source: IEnumerable<TaskModel> _TrackEntities(
+              results: IEnumerable<TaskModel> _ToSequence(() => TaskModel FirstOrDefault(IEnumerable<TaskModel> _ShapedQuery(
+                          queryContext: queryContext, 
+                          shaperCommandContext: SelectExpression: 
+                              SELECT TOP(1) [t].[Id], [t].[CreatedDate], [t].[Description], [t].[IsDeleted], [t].[Name], [t].[Priority], [t].[Status], [t].[TimeToComplete], [t].[UpdatedDate]
+                              FROM [dbo].[TaskModel] AS [t]
+                              WHERE ([t].[IsDeleted] = 0) AND ([t].[Id] = @__get_Item_0), 
+                          shaper: BufferedEntityShaper<TaskModel>))), 
+              queryContext: queryContext, 
+              entityTrackingInfos: { itemType: TaskModel }, 
+              entityAccessors: List<Func<TaskModel, object>> 
+              { 
+                  Func<TaskModel, TaskModel>, 
+              }
+          ), 
+          contextType: Tasks.DataLayer.EfClasses.TasksDbContext, 
+          logger: DiagnosticsLogger<Query>, 
+          queryContext: queryContext)
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [t].[Id], [t].[CreatedDate], [t].[Description], [t].[IsDeleted], [t].[Name], [t].[Priority], [t].[Status], [t].[TimeToComplete], [t].[UpdatedDate]
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE ([t].[IsDeleted] = 0) AND ([t].[Id] = @__get_Item_0)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [t].[Id], [t].[CreatedDate], [t].[Description], [t].[IsDeleted], [t].[Name], [t].[Priority], [t].[Status], [t].[TimeToComplete], [t].[UpdatedDate]
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE ([t].[IsDeleted] = 0) AND ([t].[Id] = @__get_Item_0)
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader was disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'TaskModel' started tracking 'TasksDbContext' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[27]
+      Done attempting to validate the bound parameter 'query' of type 'TasksApi.Controllers.Delete+Command'.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuting on filter TasksApi.Filters.ValidateModelFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuting on filter TasksApi.Filters.ValidateModelFilter.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method TasksApi.Controllers.TasksController.DeleteTask (TasksApi) with arguments (TasksApi.Controllers.Delete+Command) - Validation state: Valid
+info: TasksApi.Controllers.TasksController[0]
+      Start DeleteTask query
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An 'TaskModel' entity tracked by 'TasksDbContext' changed from 'Unchanged' to 'Deleted'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'TasksDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'TasksDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An 'TaskModel' entity tracked by 'TasksDbContext' changed from 'Deleted' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'TasksDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'TasksDbContext'.
+dbug: Microsoft.EntityFrameworkCore.Update[10004]
+      SaveChanges starting for 'TasksDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'TasksDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'TasksDbContext'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20200]
+      Beginning transaction with isolation level 'ReadCommitted'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@p8='?' (DbType = Guid), @p0='?' (Size = 7) (DbType = DateTimeOffset), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (Size = 7) (DbType = DateTimeOffset), @p9='?' (Size = 7) (DbType = DateTimeOffset)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [dbo].[TaskModel] SET [CreatedDate] = @p0, [Description] = @p1, [IsDeleted] = @p2, [Name] = @p3, [Priority] = @p4, [Status] = @p5, [TimeToComplete] = @p6, [UpdatedDate] = @p7
+      WHERE [Id] = @p8 AND [UpdatedDate] = @p9;
+      SELECT @@ROWCOUNT;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (Size = 7) (DbType = DateTimeOffset), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (Size = 7) (DbType = DateTimeOffset), @p9='?' (Size = 7) (DbType = DateTimeOffset)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [dbo].[TaskModel] SET [CreatedDate] = @p0, [Description] = @p1, [IsDeleted] = @p2, [Name] = @p3, [Priority] = @p4, [Status] = @p5, [TimeToComplete] = @p6, [UpdatedDate] = @p7
+      WHERE [Id] = @p8 AND [UpdatedDate] = @p9;
+      SELECT @@ROWCOUNT;
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader was disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20202]
+      Committing transaction.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20204]
+      Disposing transaction.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An 'TaskModel' entity tracked by 'TasksDbContext' changed from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10005]
+      SaveChanges completed for 'TasksDbContext' with 1 entities written to the database.
+info: TasksApi.Controllers.TasksController[0]
+      End DeleteTask query
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method TasksApi.Controllers.TasksController.DeleteTask (TasksApi), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 74.8614ms.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuted on filter TasksApi.Filters.ValidateModelFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuted on filter TasksApi.Filters.ValidateModelFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[4]
+      Before executing action result Microsoft.AspNetCore.Mvc.NoContentResult.
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[5]
+      After executing action result Microsoft.AspNetCore.Mvc.NoContentResult.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action TasksApi.Controllers.TasksController.DeleteTask (TasksApi) in 142.9613ms
+dbug: Microsoft.AspNetCore.Server.Kestrel[9]
+      Connection id "0HLIDEFD3D5AK" completed keep alive response.
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'TasksDbContext' disposed.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 146.8989ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 DELETE http://localhost:12345/api/tasks/e603afbf-8040-4c43-b49a-0000f821b4d3  
+trce: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware[0]
+      All hosts are allowed.
+dbug: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[1]
+      DELETE requests are not supported
+dbug: Microsoft.AspNetCore.Routing.Tree.TreeRouter[1]
+      Request successfully matched the route with name '(null)' and template 'api/tasks/{TaskId:guid}'.
+dbug: Microsoft.AspNetCore.Mvc.Internal.ActionSelector[2]
+      Action 'TasksApi.Controllers.TasksController.UpdateTask (TasksApi)' with id 'cdb016d2-290c-4965-86a7-9eb1b6b98d60' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "DeleteTask", controller = "Tasks"}. Executing action TasksApi.Controllers.TasksController.DeleteTask (TasksApi)
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of authorization filters (in the following order): None
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter, TasksApi.Filters.ValidateModelFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of exception filters (in the following order): TasksApi.Filters.HttpGlobalExceptionFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[22]
+      Attempting to bind parameter 'query' of type 'TasksApi.Controllers.Delete+Command' ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder[44]
+      Attempting to bind parameter 'query' of type 'TasksApi.Controllers.Delete+Command' using the name '' in request data ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[13]
+      Attempting to bind property 'TasksApi.Controllers.Delete+Command.TaskId' of type 'System.Guid' using the name 'TaskId' in request data ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[14]
+      Done attempting to bind property 'TasksApi.Controllers.Delete+Command.TaskId' of type 'System.Guid'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder[45]
+      Done attempting to bind parameter 'query' of type 'TasksApi.Controllers.Delete+Command'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[23]
+      Done attempting to bind parameter 'query' of type 'TasksApi.Controllers.Delete+Command'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[26]
+      Attempting to validate the bound parameter 'query' of type 'TasksApi.Controllers.Delete+Command' ...
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.1-rtm-30846 initialized 'TasksDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [t].[Id], [t].[CreatedDate], [t].[Description], [t].[IsDeleted], [t].[Name], [t].[Priority], [t].[Status], [t].[TimeToComplete], [t].[UpdatedDate]
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE ([t].[IsDeleted] = 0) AND ([t].[Id] = @__get_Item_0)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [t].[Id], [t].[CreatedDate], [t].[Description], [t].[IsDeleted], [t].[Name], [t].[Priority], [t].[Status], [t].[TimeToComplete], [t].[UpdatedDate]
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE ([t].[IsDeleted] = 0) AND ([t].[Id] = @__get_Item_0)
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader was disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[27]
+      Done attempting to validate the bound parameter 'query' of type 'TasksApi.Controllers.Delete+Command'.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuting on filter TasksApi.Filters.ValidateModelFilter.
+dbug: TasksApi.Filters.ValidateModelFilter[0]
+      Validation failed with result: TasksApi.Filters.Models.ValidationFailedObjectResult
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuting on filter TasksApi.Filters.ValidateModelFilter.
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Request was short circuited at action filter 'TasksApi.Filters.ValidateModelFilter'.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[4]
+      Before executing action result TasksApi.Filters.Models.ValidationFailedObjectResult.
+dbug: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[11]
+      List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter
+dbug: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[7]
+      Attempting to select an output formatter based on Accept header 'application/json' and explicitly specified content types 'application/json'. The content types in the accept header must be a subset of the explicitly set content types.
+dbug: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[2]
+      Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter' and content type 'application/json' to write the response.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'TasksApi.Errors.ErrorResponse'.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[5]
+      After executing action result TasksApi.Filters.Models.ValidationFailedObjectResult.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action TasksApi.Controllers.TasksController.DeleteTask (TasksApi) in 16.8053ms
+dbug: Microsoft.AspNetCore.Server.Kestrel[9]
+      Connection id "0HLIDEFD3D5AL" completed keep alive response.
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'TasksDbContext' disposed.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 17.4213ms 404 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:12345/api/tasks  
+trce: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware[0]
+      All hosts are allowed.
+dbug: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[3]
+      The request path  does not match the path filter
+dbug: Microsoft.AspNetCore.Routing.Tree.TreeRouter[1]
+      Request successfully matched the route with name '(null)' and template 'api/tasks'.
+dbug: Microsoft.AspNetCore.Mvc.Internal.ActionSelector[2]
+      Action 'TasksApi.Controllers.TasksController.CreateTask (TasksApi)' with id '73d36151-fc33-4e33-83f6-7ed9340c17b8' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Route matched with {action = "GetTasks", controller = "Tasks"}. Executing action TasksApi.Controllers.TasksController.GetTasks (TasksApi)
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of authorization filters (in the following order): None
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter, TasksApi.Filters.ValidateModelFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of exception filters (in the following order): TasksApi.Filters.HttpGlobalExceptionFilter
+dbug: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[22]
+      Attempting to bind parameter 'query' of type 'TasksApi.Controllers.List+Query' ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder[44]
+      Attempting to bind parameter 'query' of type 'TasksApi.Controllers.List+Query' using the name '' in request data ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[15]
+      Could not find a value in the request with name 'Page' for binding property 'TasksApi.Controllers.List+Query.Page' of type 'System.Nullable`1[System.Int32]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[14]
+      Done attempting to bind property 'TasksApi.Controllers.List+Query.Page' of type 'System.Nullable`1[System.Int32]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[15]
+      Could not find a value in the request with name 'Size' for binding property 'TasksApi.Controllers.List+Query.Size' of type 'System.Nullable`1[System.Int32]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder[14]
+      Done attempting to bind property 'TasksApi.Controllers.List+Query.Size' of type 'System.Nullable`1[System.Int32]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[13]
+      Attempting to bind property 'TasksApi.Controllers.List+Query.OrderAsc' of type 'System.String[]' using the name 'OrderAsc' in request data ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[15]
+      Could not find a value in the request with name 'OrderAsc' for binding property 'TasksApi.Controllers.List+Query.OrderAsc' of type 'System.String[]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[14]
+      Done attempting to bind property 'TasksApi.Controllers.List+Query.OrderAsc' of type 'System.String[]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[13]
+      Attempting to bind property 'TasksApi.Controllers.List+Query.OrderDesc' of type 'System.String[]' using the name 'OrderDesc' in request data ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[15]
+      Could not find a value in the request with name 'OrderDesc' for binding property 'TasksApi.Controllers.List+Query.OrderDesc' of type 'System.String[]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinder[14]
+      Done attempting to bind property 'TasksApi.Controllers.List+Query.OrderDesc' of type 'System.String[]'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder[45]
+      Done attempting to bind parameter 'query' of type 'TasksApi.Controllers.List+Query'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[23]
+      Done attempting to bind parameter 'query' of type 'TasksApi.Controllers.List+Query'.
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[26]
+      Attempting to validate the bound parameter 'query' of type 'TasksApi.Controllers.List+Query' ...
+dbug: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder[27]
+      Done attempting to validate the bound parameter 'query' of type 'TasksApi.Controllers.List+Query'.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuting on filter TasksApi.Filters.ValidateModelFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuting on filter TasksApi.Filters.ValidateModelFilter.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method TasksApi.Controllers.TasksController.GetTasks (TasksApi) with arguments (TasksApi.Controllers.List+Query) - Validation state: Valid
+info: TasksApi.Controllers.TasksController[0]
+      Start GetTasks query
+info: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.1.1-rtm-30846 initialized 'TasksDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [dbo].[TaskModel] AS [t]
+              WHERE [t].[IsDeleted] = 0)
+          THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+      END
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE
+          WHEN EXISTS (
+              SELECT 1
+              FROM [dbo].[TaskModel] AS [t]
+              WHERE [t].[IsDeleted] = 0)
+          THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+      END
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader was disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE [t].[IsDeleted] = 0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE [t].[IsDeleted] = 0
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader was disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[CreatedDate], [t].[Description], [t].[Id], [t].[Name], [t].[Priority], [t].[Status], [t].[TimeToComplete], [t].[UpdatedDate]
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE [t].[IsDeleted] = 0
+      ORDER BY (SELECT 1)
+      OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[CreatedDate], [t].[Description], [t].[Id], [t].[Name], [t].[Priority], [t].[Status], [t].[TimeToComplete], [t].[UpdatedDate]
+      FROM [dbo].[TaskModel] AS [t]
+      WHERE [t].[IsDeleted] = 0
+      ORDER BY (SELECT 1)
+      OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader was disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'TasksDb' on server '.\SQLEXPRESS'.
+info: TasksApi.Controllers.TasksController[0]
+      End GetTasks query
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method TasksApi.Controllers.TasksController.GetTasks (TasksApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.6774ms.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuted on filter TasksApi.Filters.ValidateModelFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuted on filter TasksApi.Filters.ValidateModelFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[4]
+      Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+dbug: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[11]
+      List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter
+dbug: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[7]
+      Attempting to select an output formatter based on Accept header 'application/json' and explicitly specified content types 'application/json'. The content types in the accept header must be a subset of the explicitly set content types.
+dbug: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector[2]
+      Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter' and content type 'application/json' to write the response.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'TasksApi.Pagination.Page`1[[TasksApi.Dto.TaskDetails, TasksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[5]
+      After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ProducesAttribute.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+trce: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.SaveTempDataFilter.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action TasksApi.Controllers.TasksController.GetTasks (TasksApi) in 9.0325ms
+dbug: Microsoft.AspNetCore.Server.Kestrel[9]
+      Connection id "0HLIDEFD3D5AK" completed keep alive response.
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'TasksDbContext' disposed.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 9.3767ms 200 application/json; charset=utf-8
