@@ -41,5 +41,63 @@ namespace TasksApi.Controllers
             return Ok(tasks);
         }
 
+        /// <summary>
+        /// Creates new task.
+        /// </summary>
+        /// <param name="query">Query.</param>
+        /// <returns>Created task.</returns>
+        [HttpPost]
+        [ProducesResponseType(typeof(Page<TaskDetails>), StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> CreateTask(Post.Command query)
+        {
+            _logger.LogInformation("Start CreateTask query");
+
+            var task = await _mediator.Send(query);
+
+            _logger.LogInformation("End CreateTask query");
+
+            return CreatedAtAction(null, new { TaskId = task.Id }, task);
+        }
+
+        /// <summary>
+        /// Updates existing task.
+        /// </summary>
+        /// <param name="query">Query.</param>
+        /// <returns>Created task.</returns>
+        [HttpPut("{TaskId:guid}")]
+        [ProducesResponseType(typeof(Page<TaskDetails>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> UpdateTask(Put.Command query)
+        {
+            _logger.LogInformation("Start CreateTask query");
+
+            var task = await _mediator.Send(query);
+
+            _logger.LogInformation("End CreateTask query");
+
+            return CreatedAtAction(null, new { TaskId = task.Id }, task);
+        }
+
+        /// <summary>
+        /// Deletes existing task.
+        /// </summary>
+        /// <param name="query">Query.</param>
+        /// <returns>Created task.</returns>
+        [HttpDelete("{TaskId:guid}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> DeleteTask(Delete.Command query)
+        {
+            _logger.LogInformation("Start DeleteTask query");
+
+            await _mediator.Send(query);
+
+            _logger.LogInformation("End DeleteTask query");
+
+            return NoContent();
+        }
+
     }
 }

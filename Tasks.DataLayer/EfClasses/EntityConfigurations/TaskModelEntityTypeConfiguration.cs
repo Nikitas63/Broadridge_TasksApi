@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Tasks.DataLayer.Models;
+using Tasks.DataLayer.Models.Enums;
 
 namespace Tasks.DataLayer.EfClasses.EntityConfigurations
 {
@@ -36,7 +37,7 @@ namespace Tasks.DataLayer.EfClasses.EntityConfigurations
 
             builder.Property(f => f.Status)
                 .IsRequired()
-                .HasConversion(new EnumToNumberConverter<TaskStatus, int>());
+                .HasConversion(new EnumToNumberConverter<TaskModelStatus, int>());
         }
     }
 }

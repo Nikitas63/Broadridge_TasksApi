@@ -1,6 +1,6 @@
 ﻿namespace Tasks.DataLayer.Models.Enums
 {
-    public enum TaskStatus
+    public enum TaskModelStatus
     {
         Active = 1,
 

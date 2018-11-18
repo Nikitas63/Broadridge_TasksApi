@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Threading.Tasks;
+using Tasks.DataLayer.Models.Enums;
 
 namespace TasksApi.Dto
 {
@@ -15,7 +15,7 @@ namespace TasksApi.Dto
 
         public int TimeToComplete { get; set; }
 
-        public TaskStatus Status { get; set; }
+        public TaskModelStatus Status { get; set; }
 
         public DateTimeOffset CreatedDate { get; set; }
 

@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Tasks.DataLayer.Interfaces;
 using Tasks.DataLayer.Models.Base;
+using Tasks.DataLayer.Models.Enums;
 
 namespace Tasks.DataLayer.Models
 {
@@ -20,6 +21,6 @@ namespace Tasks.DataLayer.Models
         /// </summary>
         public int TimeToComplete { get; set; }
 
-        public TaskStatus Status { get; set; }
+        public TaskModelStatus Status { get; set; }
     }
 }
