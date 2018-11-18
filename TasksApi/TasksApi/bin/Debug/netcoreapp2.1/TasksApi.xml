@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TasksApi</name>
+    </assembly>
+    <members>
+        <member name="T:TasksApi.AssemblyMarker">
+            <summary>
+            Assembly marker type (used only to explicitly reference assembly via this marker type)
+            </summary>
+        </member>
+        <member name="T:TasksApi.Errors.ErrorDetail">
+            <summary>
+            Represents an error detail
+            </summary>
+        </member>
+        <member name="P:TasksApi.Errors.ErrorDetail.Source">
+            <summary>
+            The error’s source
+            </summary>
+        </member>
+        <member name="P:TasksApi.Errors.ErrorDetail.Message">
+            <summary>
+            Description of the error
+            </summary>
+        </member>
+        <member name="T:TasksApi.Errors.ErrorResponse">
+            <summary>
+            Represents an error response
+            </summary>
+        </member>
+        <member name="P:TasksApi.Errors.ErrorResponse.Code">
+            <summary>
+            An HTTP status code value, without the textual description.
+            Example values include: 400 (Bad Request), 401 (Unauthorized), 404 (Not Found), etc…
+            </summary>
+        </member>
+        <member name="P:TasksApi.Errors.ErrorResponse.Message">
+            <summary>
+            Description of the error
+            </summary>
+        </member>
+        <member name="P:TasksApi.Filters.Models.ValidationCustomErrorAsMessage.Version">
+            <summary>
+            Format version (default value is the most recent)
+            </summary>
+        </member>
+    </members>
+</doc>
