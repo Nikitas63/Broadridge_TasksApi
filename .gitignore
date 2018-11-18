@@ -1,11 +1,6 @@
-.vs/
-_ReSharper.Caches/
-packages/
-*/bin/
-*/obj/
-src/*/logs/
-tests/**/bin/
-tests/**/obj/
-tests/TestResults/
-TestResults/
+*.suo
 *.user
+_ReSharper.*
+bin
+obj
+packages
