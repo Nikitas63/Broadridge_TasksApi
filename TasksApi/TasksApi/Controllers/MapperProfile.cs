@@ -4,6 +4,9 @@ using TasksApi.Dto;
 
 namespace TasksApi.Controllers
 {
+    /// <summary>
+    /// Mapper dto models into database models and vice versa.
+    /// </summary>
     public class MapperProfile : Profile
     {
         public MapperProfile()

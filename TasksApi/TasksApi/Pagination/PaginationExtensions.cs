@@ -6,6 +6,9 @@ using X.PagedList;
 
 namespace TasksApi.Pagination
 {
+    /// <summary>
+    /// Helper methods for pagination using.
+    /// </summary>
     public static class PaginationExtensions
     {
         public static Task<IPagedList<TDestination>> ProjectToPagedListAsync<TDestination>(this IQueryable queryable, int pageNumber, int pageSize)

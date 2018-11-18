@@ -6,6 +6,10 @@ using X.PagedList;
 
 namespace TasksApi.Pagination
 {
+    /// <summary>
+    /// Page of paginated result.
+    /// </summary>
+    /// <typeparam name="TData"></typeparam>
     [JsonObject(MemberSerialization.OptIn)]
     public class Page<TData>
     {

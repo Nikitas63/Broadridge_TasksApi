@@ -10,6 +10,9 @@ using TasksApi.Filters.Models;
 
 namespace TasksApi.Filters
 {
+    /// <summary>
+    /// Action filter implementation (with validation logic).
+    /// </summary>
     public class ValidateModelFilter : IActionFilter
     {
         private readonly ILogger _logger;

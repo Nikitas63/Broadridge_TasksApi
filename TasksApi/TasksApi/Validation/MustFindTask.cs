@@ -5,6 +5,10 @@ using Tasks.DataLayer.Models.Base;
 
 namespace TasksApi.Validation
 {
+    /// <summary>
+    /// Task find validator.
+    /// </summary>
+    /// <typeparam name="TEntityType"></typeparam>
     internal class MustFindTask<TEntityType> : PropertyValidator
         where TEntityType : EntityWithId
     {

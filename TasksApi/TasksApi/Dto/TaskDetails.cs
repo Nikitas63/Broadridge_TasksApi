@@ -3,6 +3,9 @@ using Tasks.DataLayer.Models.Enums;
 
 namespace TasksApi.Dto
 {
+    /// <summary>
+    /// Task details dto model.
+    /// </summary>
     public class TaskDetails
     {
         public Guid Id { get; set; }

@@ -9,6 +9,9 @@ using TasksApi.Pagination;
 
 namespace TasksApi.Controllers
 {
+    /// <summary>
+    /// Tasks controller.
+    /// </summary>
     [Produces("application/json")]
     [Route("api/tasks")]
     public class TasksController : ControllerBase
@@ -16,6 +19,11 @@ namespace TasksApi.Controllers
         private readonly IMediator _mediator;
         private readonly ILogger _logger;
 
+        /// <summary>
+        /// Initializes new instance of TasksController.
+        /// </summary>
+        /// <param name="mediator"></param>
+        /// <param name="logger"></param>
         public TasksController(IMediator mediator, ILogger<TasksController> logger)
         {
             _mediator = mediator;

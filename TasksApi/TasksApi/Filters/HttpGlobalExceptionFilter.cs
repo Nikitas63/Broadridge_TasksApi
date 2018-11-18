@@ -6,6 +6,9 @@ using TasksApi.Errors;
 
 namespace TasksApi.Filters
 {
+    /// <summary>
+    /// Exeption filter implementation.
+    /// </summary>
     public class HttpGlobalExceptionFilter : IExceptionFilter
     {
         private readonly ILogger _logger;

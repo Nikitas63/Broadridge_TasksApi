@@ -2,6 +2,9 @@
 
 namespace TasksApi.Pagination
 {
+    /// <summary>
+    /// Pagination context.
+    /// </summary>
     [JsonObject(MemberSerialization.OptIn)]
     public class PaginationContext
     {

@@ -8,6 +8,9 @@ using TasksApi.Filters.Models;
 
 namespace TasksApi.Validation
 {
+    /// <summary>
+    /// Helper methods for validation.
+    /// </summary>
     public static class ValidationExtensions
     {
         public static IRuleBuilderOptions<TRequest, Guid> MustFindEntityById<TRequest, TEntityType>(

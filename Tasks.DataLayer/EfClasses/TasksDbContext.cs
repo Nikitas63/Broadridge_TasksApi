@@ -9,6 +9,9 @@ using Tasks.DataLayer.Models;
 
 namespace Tasks.DataLayer.EfClasses
 {
+    /// <summary>
+    /// Represents tasks database context.
+    /// </summary>
     public class TasksDbContext : DbContext
     {
         public const string DEFAULT_SCHEMA = "dbo";
@@ -39,14 +42,6 @@ namespace Tasks.DataLayer.EfClasses
             return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }
 
-        /// <summary>
-        /// Warning: force deletion from database. Only for development purposes.
-        /// </summary>
-        public async Task<int> DevelopmentBaseSaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
-        {
-            return await base.SaveChangesAsync(true, cancellationToken);
-        }
-
         protected override void OnModelCreating(ModelBuilder builder)
         {
             ConfigureCommonEntityProperties(builder);
@@ -56,7 +51,6 @@ namespace Tasks.DataLayer.EfClasses
         private static void ConfigureSoftDelete<T>(ModelBuilder builder)
             where T : class, ISoftDeletable
         {
-
                 builder.Entity<T>()
                     .Property<bool>(_isDeletedProperty)
                     .IsRequired()
