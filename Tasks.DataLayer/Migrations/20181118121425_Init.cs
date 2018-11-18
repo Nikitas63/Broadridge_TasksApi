@@ -30,6 +30,25 @@ namespace Tasks.DataLayer.Migrations
                     table.PrimaryKey("PK_TaskModel", x => x.Id)
                         .Annotation("SqlServer:Clustered", true);
                 });
+
+            // Data seeding
+            migrationBuilder.Sql(@"
+                DECLARE @Count INT = 1
+                DECLARE @TaskName NVARCHAR(MAX)
+                DECLARE @TaskDescription NVARCHAR(MAX)
+
+                WHILE @Count <= 10000
+                BEGIN
+                    SET @TaskName = 'Task ' + CAST(@Count AS NVARCHAR(MAX))
+                    SET @TaskDescription = 'Task Description Number ' + CAST(@Count AS NVARCHAR(MAX))
+
+                    INSERT INTO [dbo].[TaskModel] 
+                           ([Id],    [CreatedDate], [UpdatedDate], [Name],    [Description],    [Priority],             [TimeToComplete],         [Status], [IsDeleted])
+                    VALUES (NEWID(), GETDATE(),     GETDATE(),     @TaskName, @TaskDescription, CAST(RAND()*10 as INT), CAST(RAND()*1000 as INT), 1,        0)
+
+                    SET @Count = @Count + 1
+                END
+            ");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
