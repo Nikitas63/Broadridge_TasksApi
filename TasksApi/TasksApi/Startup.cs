@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
+using AutoMapper;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -47,6 +48,8 @@ namespace TasksApi
                 fv.RegisterValidatorsFromAssemblyContaining<AssemblyMarker>();
             })
             .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddAutoMapper();
 
             services.AddDbContext<TasksDbContext>(options =>
             {
