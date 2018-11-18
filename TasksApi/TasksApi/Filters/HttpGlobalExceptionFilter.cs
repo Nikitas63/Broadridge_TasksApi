@@ -8,14 +8,12 @@ namespace TasksApi.Filters
 {
     public class HttpGlobalExceptionFilter : IExceptionFilter
     {
-        private readonly IHostingEnvironment _env;
         private readonly ILogger _logger;
 
         public HttpGlobalExceptionFilter(
             IHostingEnvironment env,
             ILogger<HttpGlobalExceptionFilter> logger)
         {
-            _env = env;
             _logger = logger;
         }
 
