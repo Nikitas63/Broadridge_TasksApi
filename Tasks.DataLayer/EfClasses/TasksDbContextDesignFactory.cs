@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Design;
 
 namespace Tasks.DataLayer.EfClasses
 {
-    public class EFormsContextDesignFactory : IDesignTimeDbContextFactory<TasksDbContext>
+    public class TasksDbContextDesignFactory : IDesignTimeDbContextFactory<TasksDbContext>
     {
         public TasksDbContext CreateDbContext(string[] args)
         {

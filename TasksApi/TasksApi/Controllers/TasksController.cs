@@ -22,6 +22,11 @@ namespace TasksApi.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// Gets the available tasks list.
+        /// </summary>
+        /// <param name="query">Query.</param>
+        /// <returns>Available tasks list.</returns>
         [HttpGet]
         [ProducesResponseType(typeof(Page<TaskDetails>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
