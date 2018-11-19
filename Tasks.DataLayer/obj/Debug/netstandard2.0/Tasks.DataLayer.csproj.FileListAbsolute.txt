@@ -1,9 +1,0 @@
-C:\Users\skvortsov\Documents\Test\Tasks.DataLayer\bin\Debug\netstandard2.0\Tasks.DataLayer.deps.json
-C:\Users\skvortsov\Documents\Test\Tasks.DataLayer\bin\Debug\netstandard2.0\Tasks.DataLayer.dll
-C:\Users\skvortsov\Documents\Test\Tasks.DataLayer\bin\Debug\netstandard2.0\Tasks.DataLayer.pdb
-C:\Users\skvortsov\Documents\Test\Tasks.DataLayer\obj\Debug\netstandard2.0\Tasks.DataLayer.csproj.CoreCompileInputs.cache
-C:\Users\skvortsov\Documents\Test\Tasks.DataLayer\obj\Debug\netstandard2.0\Tasks.DataLayer.AssemblyInfoInputs.cache
-C:\Users\skvortsov\Documents\Test\Tasks.DataLayer\obj\Debug\netstandard2.0\Tasks.DataLayer.AssemblyInfo.cs
-C:\Users\skvortsov\Documents\Test\Tasks.DataLayer\obj\Debug\netstandard2.0\Tasks.DataLayer.dll
-C:\Users\skvortsov\Documents\Test\Tasks.DataLayer\obj\Debug\netstandard2.0\Tasks.DataLayer.pdb
-C:\Users\skvortsov\Documents\Test\Tasks.DataLayer\obj\Debug\netstandard2.0\Tasks.DataLayer.csprojAssemblyReference.cache
