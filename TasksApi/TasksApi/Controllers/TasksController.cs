@@ -50,6 +50,25 @@ namespace TasksApi.Controllers
         }
 
         /// <summary>
+        /// Gets task by its id.
+        /// </summary>
+        /// <param name="query">Query.</param>
+        /// <returns>Task details.</returns>
+        [HttpGet("{TaskId:guid}")]
+        [ProducesResponseType(typeof(Page<TaskDetails>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> GetTask(Get.Query query)
+        {
+            _logger.LogInformation("Start GetTasks query");
+
+            var task = await _mediator.Send(query);
+
+            _logger.LogInformation("End GetTasks query");
+
+            return Ok(task);
+        }
+
+        /// <summary>
         /// Creates new task.
         /// </summary>
         /// <param name="query">Query.</param>
