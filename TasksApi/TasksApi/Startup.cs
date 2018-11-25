@@ -84,9 +84,9 @@ namespace TasksApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
-            app.UseCors(builder =>
-                builder.WithOrigins(Configuration.GetSection("FrontApplication").Value)
-                       .AllowAnyHeader());
+            app.UseCors(
+                options => options.WithOrigins(Configuration.GetSection("FrontApplication").Value).AllowAnyMethod()
+            );
 
             app.UseSwagger();
 
