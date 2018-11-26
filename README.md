@@ -21,7 +21,7 @@ https://i.imgur.com/WpuFOsI.png
 Expected result: https://i.imgur.com/bmYbjuW.png
 
 #### 4. Browse the http://localhost:5055/swagger/index.html
- - Port and url can be whatever you want and configured through IIS.
+ - Front end application use the http://localhost:5055 url for backend.
  - First time you access the url, database (TasksDb) will be authomatically created in your SQLExpress server.
 
 Expected result: https://i.imgur.com/gShovsX.png
