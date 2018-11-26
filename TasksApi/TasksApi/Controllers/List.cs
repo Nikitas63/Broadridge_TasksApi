@@ -8,6 +8,7 @@ using FluentValidation;
 using MediatR;
 using Tasks.DataLayer.EfClasses;
 using Tasks.DataLayer.Models;
+using Tasks.DataLayer.Models.Enums;
 using TasksApi.Dto;
 using TasksApi.Pagination;
 
@@ -42,6 +43,11 @@ namespace TasksApi.Controllers
             /// Available columns: "name,priority,date"
             /// </summary>
             public string[] OrderDesc { get; set; }
+
+            /// <summary>
+            /// Available values: "all,active,completed"
+            /// </summary>
+            public string Filter { get; set; }
         }
 
         public class QueryValidator : AbstractValidator<Query>
@@ -53,10 +59,17 @@ namespace TasksApi.Controllers
 
                 RuleForEach(m => m.OrderAsc).Must(BeAValidOrder);
                 RuleForEach(m => m.OrderDesc).Must(BeAValidOrder);
+
+                RuleFor(m => m.Filter)
+                    .Must(BeAValidFilter)
+                    .When(m => !string.IsNullOrWhiteSpace(m.Filter));
             }
 
             private bool BeAValidOrder(string includeValue) =>
                 Enum.TryParse(typeof(SortingFields), includeValue, true, out var val);
+
+            private bool BeAValidFilter(string includeValue) =>
+                Enum.TryParse(typeof(FilterProperties), includeValue, true, out var val);
         }
 
         public class Handler : IRequestHandler<Query, Page<TaskDetails>>
@@ -73,6 +86,21 @@ namespace TasksApi.Controllers
                 IQueryable<TaskModel> query = _context.Tasks;
 
                 query = BuildSortedQuery(request, query);
+
+                if (request.Filter != null)
+                {
+                    Enum.TryParse(request.Filter, true, out FilterProperties val);
+
+                    if (val == FilterProperties.Active)
+                    {
+                        query = query.Where(t => t.Status == TaskModelStatus.Active);
+                    }
+
+                    if (val == FilterProperties.Completed)
+                    {
+                        query = query.Where(t => t.Status == TaskModelStatus.Completed);
+                    }
+                }
 
                 return await query
                     .ProjectToPageAsync<TaskDetails>(request.Page ?? 1, request.Size ?? 20);
