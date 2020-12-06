@@ -72,6 +72,7 @@
             <e p="Notification.cs" t="Include" />
           </e>
           <e p="Pipelines" t="Include">
+            <e p="CustomPipelineBehavior.cs" t="Include" />
             <e p="PostRequestHandler.cs" t="Include" />
             <e p="PreRequestHandler.cs" t="Include" />
           </e>

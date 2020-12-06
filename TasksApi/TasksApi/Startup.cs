@@ -40,6 +40,8 @@ namespace TasksApi
         {
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPreProcessorBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPostProcessorBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CustomPipelineBehavior<,>));
+
 
             services.AddMediatR();
             
