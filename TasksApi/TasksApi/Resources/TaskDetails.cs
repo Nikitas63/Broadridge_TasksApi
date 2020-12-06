@@ -1,7 +1,7 @@
 ﻿using System;
 using Tasks.DataLayer.Models.Enums;
 
-namespace TasksApi.Dto
+namespace TasksApi.Resources
 {
     /// <summary>
     /// Task details dto model.

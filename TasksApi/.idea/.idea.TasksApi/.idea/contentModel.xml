@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Sources\Broadridge_TasksApi\Tasks.DataLayer" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="EfClasses" t="Include">
+        <e p="EntityConfigurations" t="Include">
+          <e p="TaskModelEntityTypeConfiguration.cs" t="Include" />
+        </e>
+        <e p="TasksDbContext.cs" t="Include" />
+        <e p="TasksDbContextDesignFactory.cs" t="Include" />
+      </e>
+      <e p="Interfaces" t="Include">
+        <e p="ISoftDeletable.cs" t="Include" />
+        <e p="ITimeTrackable.cs" t="Include" />
+      </e>
+      <e p="Migrations" t="Include">
+        <e p="20181118121425_Init.cs" t="Include" />
+        <e p="20181118121425_Init.Designer.cs" t="Include" />
+        <e p="TasksDbContextModelSnapshot.cs" t="Include" />
+      </e>
+      <e p="Models" t="Include">
+        <e p="Base" t="Include">
+          <e p="Entity.cs" t="Include" />
+          <e p="EntityWithId.cs" t="Include" />
+          <e p="IEntityKeyProvider.cs" t="Include" />
+          <e p="TimeTrackableEntityWithId.cs" t="Include" />
+        </e>
+        <e p="Enums" t="Include">
+          <e p="TaskModelStatus.cs" t="Include" />
+        </e>
+        <e p="TaskModel.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.1" t="Include">
+            <e p="Tasks.DataLayer.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Tasks.DataLayer.csproj" t="IncludeRecursive" />
+    </e>
+    <e p="C:\Sources\Broadridge_TasksApi\TasksApi" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="TasksApi" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="AssemblyMarker.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="TasksController.cs" t="Include" />
+        </e>
+        <e p="Errors" t="Include">
+          <e p="ErrorDetails.cs" t="Include" />
+          <e p="ErrorResponse.cs" t="Include" />
+        </e>
+        <e p="Filters" t="Include">
+          <e p="HttpGlobalExceptionFilter.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="ErrorResponseResult.cs" t="Include" />
+            <e p="ValidationCustomErrorAsMessage.cs" t="Include" />
+            <e p="ValidationFailedObjectResult.cs" t="Include" />
+          </e>
+          <e p="ValidateModelFilter.cs" t="Include" />
+        </e>
+        <e p="Handlers" t="Include">
+          <e p="Create.cs" t="Include" />
+          <e p="Delete.cs" t="Include" />
+          <e p="Get.cs" t="Include" />
+          <e p="List.cs" t="Include" />
+          <e p="Notifications" t="Include">
+            <e p="Notification.cs" t="Include" />
+          </e>
+          <e p="Pipelines" t="Include">
+            <e p="PostRequestHandler.cs" t="Include" />
+            <e p="PreRequestHandler.cs" t="Include" />
+          </e>
+          <e p="Update.cs" t="Include" />
+        </e>
+        <e p="Mapping" t="Include">
+          <e p="MapperProfile.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="TasksApi.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pagination" t="Include">
+          <e p="Page.cs" t="Include" />
+          <e p="PaginationContext.cs" t="Include" />
+          <e p="PaginationExtensions.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="CustomProfile.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Resources" t="Include">
+          <e p="FilterProperties.cs" t="Include" />
+          <e p="SortingFields.cs" t="Include" />
+          <e p="TaskDetails.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="TasksApi.csproj" t="IncludeRecursive" />
+        <e p="Validation" t="Include">
+          <e p="MustFindTask.cs" t="Include" />
+          <e p="ValidationExtensions.cs" t="Include" />
+        </e>
+        <e p="Validators" t="Include">
+          <e p="Validators.cs" t="Include" />
+        </e>
+        <e p="wwwroot" t="Include" />
+      </e>
+      <e p="TasksApi.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\nskvortsov\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\nskvortsov\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_TasksApi.-1503943501.00" t="ExcludeRecursive" />
+  </component>
+</project>

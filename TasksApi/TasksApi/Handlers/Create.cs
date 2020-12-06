@@ -1,16 +1,15 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
-using FluentValidation;
 using MediatR;
 using Tasks.DataLayer.EfClasses;
 using Tasks.DataLayer.Models;
 using Tasks.DataLayer.Models.Enums;
-using TasksApi.Dto;
+using TasksApi.Resources;
 
-namespace TasksApi.Controllers
+namespace TasksApi.Handlers
 {
-    public static class Post
+    public static class Create
     {
         public class Command : IRequest<TaskDetails>
         {
@@ -21,24 +20,6 @@ namespace TasksApi.Controllers
             public int Priority { get; set; }
 
             public int TimeToComplete { get; set; }
-        }
-
-        public class CommandValidator : AbstractValidator<Command>
-        {
-            public CommandValidator()
-            {
-                RuleFor(c => c.Name)
-                    .NotEmpty();
-
-                RuleFor(c => c.Description)
-                    .NotEmpty();
-
-                RuleFor(c => c.Priority)
-                    .GreaterThan(0);
-
-                RuleFor(c => c.TimeToComplete)
-                    .GreaterThan(0);
-            }
         }
 
         public class Handler : IRequestHandler<Command, TaskDetails>
@@ -63,7 +44,7 @@ namespace TasksApi.Controllers
                     Status = TaskModelStatus.Active
                 };
 
-                var addedSubformEntity = _context.Tasks.Add(taskModel);
+                _context.Tasks.Add(taskModel);
 
                 await _context.SaveChangesAsync(cancellationToken);
 

@@ -4,15 +4,14 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
-using FluentValidation;
 using MediatR;
 using Tasks.DataLayer.EfClasses;
 using Tasks.DataLayer.Models;
 using Tasks.DataLayer.Models.Enums;
-using TasksApi.Dto;
 using TasksApi.Pagination;
+using TasksApi.Resources;
 
-namespace TasksApi.Controllers
+namespace TasksApi.Handlers
 {
     public static class List
     {
@@ -48,28 +47,6 @@ namespace TasksApi.Controllers
             /// Available values: "all,active,completed"
             /// </summary>
             public string Filter { get; set; }
-        }
-
-        public class QueryValidator : AbstractValidator<Query>
-        {
-            public QueryValidator()
-            {
-                When(m => m.Page != null, () => { RuleFor(m => m.Page).GreaterThan(0); });
-                When(m => m.Size != null, () => { RuleFor(m => m.Size).GreaterThan(0); });
-
-                RuleForEach(m => m.OrderAsc).Must(BeAValidOrder);
-                RuleForEach(m => m.OrderDesc).Must(BeAValidOrder);
-
-                RuleFor(m => m.Filter)
-                    .Must(BeAValidFilter)
-                    .When(m => !string.IsNullOrWhiteSpace(m.Filter));
-            }
-
-            private bool BeAValidOrder(string includeValue) =>
-                Enum.TryParse(typeof(SortingFields), includeValue, true, out var val);
-
-            private bool BeAValidFilter(string includeValue) =>
-                Enum.TryParse(typeof(FilterProperties), includeValue, true, out var val);
         }
 
         public class Handler : IRequestHandler<Query, Page<TaskDetails>>

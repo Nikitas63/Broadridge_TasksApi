@@ -3,9 +3,10 @@ using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using TasksApi.Dto;
 using TasksApi.Errors;
+using TasksApi.Handlers;
 using TasksApi.Pagination;
+using TasksApi.Resources;
 
 namespace TasksApi.Controllers
 {
@@ -76,11 +77,14 @@ namespace TasksApi.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(Page<TaskDetails>), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> CreateTask(Post.Command query)
+        public async Task<IActionResult> CreateTask(Create.Command query)
         {
             _logger.LogInformation("Start CreateTask query");
 
             var task = await _mediator.Send(query);
+            
+            //notification
+            await _mediator.Publish(new Notification.Command {Message = "Email send about task creation, or fucking job run"});
 
             _logger.LogInformation("End CreateTask query");
 
@@ -95,7 +99,7 @@ namespace TasksApi.Controllers
         [HttpPut("{TaskId:guid}")]
         [ProducesResponseType(typeof(Page<TaskDetails>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> UpdateTask(Put.Command query)
+        public async Task<IActionResult> UpdateTask(Update.Command query)
         {
             _logger.LogInformation("Start CreateTask query");
 

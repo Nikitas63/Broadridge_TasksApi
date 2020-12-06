@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using Tasks.DataLayer.Models;
-using TasksApi.Dto;
+using TasksApi.Resources;
 
-namespace TasksApi.Controllers
+namespace TasksApi.Mapping
 {
     /// <summary>
     /// Mapper dto models into database models and vice versa.

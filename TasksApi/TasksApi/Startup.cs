@@ -4,6 +4,7 @@ using System.Reflection;
 using AutoMapper;
 using FluentValidation.AspNetCore;
 using MediatR;
+using MediatR.Pipeline;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -13,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Tasks.DataLayer.EfClasses;
 using TasksApi.Filters;
+using TasksApi.Handlers.Pipelines;
 
 namespace TasksApi
 {
@@ -36,8 +38,11 @@ namespace TasksApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMediatR();
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPreProcessorBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPostProcessorBehavior<,>));
 
+            services.AddMediatR();
+            
             services.AddMvc(options =>
             {
                 options.Filters.Add<HttpGlobalExceptionFilter>();
@@ -48,7 +53,7 @@ namespace TasksApi
                 fv.RegisterValidatorsFromAssemblyContaining<AssemblyMarker>();
             })
             .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+            
             services.AddAutoMapper();
 
             services.AddDbContext<TasksDbContext>(options =>
@@ -94,6 +99,7 @@ namespace TasksApi
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
             });
+            
 
             app.UseMvc();
         }

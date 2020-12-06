@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using FluentValidation;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Tasks.DataLayer.EfClasses;
-using Tasks.DataLayer.Models;
-using TasksApi.Validation;
 
 namespace TasksApi.Controllers
 {
@@ -15,14 +11,6 @@ namespace TasksApi.Controllers
         public class Command : IRequest
         {
             public Guid TaskId { get; set; }
-        }
-
-        public class CommandValidator : AbstractValidator<Command>
-        {
-            public CommandValidator(TasksDbContext context)
-            {
-                RuleFor(m => m.TaskId).MustFindEntityById<Command, TaskModel>(context, StatusCodes.Status404NotFound);
-            }
         }
 
         public class Handler : AsyncRequestHandler<Command>

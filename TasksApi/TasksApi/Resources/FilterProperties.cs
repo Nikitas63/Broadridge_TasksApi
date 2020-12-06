@@ -1,4 +1,4 @@
-﻿namespace TasksApi.Controllers
+﻿namespace TasksApi.Resources
 {
     /// <summary>
     /// Filter tasks properties.

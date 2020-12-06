@@ -2,16 +2,12 @@
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
-using FluentValidation;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Tasks.DataLayer.EfClasses;
-using Tasks.DataLayer.Models;
-using TasksApi.Dto;
-using TasksApi.Validation;
+using TasksApi.Resources;
 
-namespace TasksApi.Controllers
+namespace TasksApi.Handlers
 {
     public static class Get
     {
@@ -19,20 +15,6 @@ namespace TasksApi.Controllers
         {
             [FromRoute]
             public Guid TaskId { get; set; }
-        }
-
-        public class QueryValidator : AbstractValidator<Query>
-        {
-            public QueryValidator(TasksDbContext context)
-            {
-                RuleFor(c => c.TaskId)
-                    .NotEmpty();
-
-                RuleFor(m => m.TaskId).MustFindEntityById<Query, TaskModel>(context, StatusCodes.Status404NotFound);
-            }
-
-            private bool BeAValidOrder(string includeValue) =>
-                Enum.TryParse(typeof(SortingFields), includeValue, true, out var val);
         }
 
         public class Handler : IRequestHandler<Query,TaskDetails>
